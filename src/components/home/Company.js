@@ -1,9 +1,16 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { companies } from "../../data/company";
-
 import { Autoplay } from "swiper";
+import { useEffect, useState } from "react";
 
 const Company = () => {
+  const [companies, setCompanies] = useState([]);
+
+  useEffect(() => {
+    fetch('data/company.json')
+    .then(res => res.json())
+    .then(data => setCompanies(data))
+  }, [])
+
   return (
     <section className="company section-gap">
       <div className="container-fluid">

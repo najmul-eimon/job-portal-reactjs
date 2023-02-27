@@ -1,0 +1,26 @@
+[
+  {
+    "id": "a1",
+    "title": "Job vacancy",
+    "icon": "../images/svg/suitcase-blue.svg",
+    "count": 50000
+  },
+  {
+    "id": "a1",
+    "title": "People Got Hired",
+    "icon": "../images/svg/users-three-blue.svg",
+    "count": 10000
+  },
+  {
+    "id": "a1",
+    "title": "Companies",
+    "icon": "../images/svg/buildings-blue.svg",
+    "count": 2000
+  },
+  {
+    "id": "a1",
+    "title": "New Job",
+    "icon": "../images/svg/signpost.svg",
+    "count": 233
+  }
+]

@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import {startWith} from '../../../data/counter';
 import SingleCard from './SingleCard';
 
 const StartWith = () => {
