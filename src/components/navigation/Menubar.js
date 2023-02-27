@@ -1,12 +1,27 @@
+import { useEffect, useState } from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link, NavLink } from 'react-router-dom';
 import {menuItems} from '../../data/menuItems';
 import logo from '../../assets/images/svg/logo.svg';
 
 const Menubar = () => {
+  const [scroll, setScroll] = useState(false);
+  
+  useEffect(() => {
+    document.addEventListener('scroll', () => {
+      let scrolling = window.scrollY;
+
+      if(scrolling > 200){
+        setScroll(true);
+      }
+      else{
+        setScroll(false);
+      }
+    });
+  }, [])
 
   return (
-    <header className="menubar" id="menubar">
+    <header className={`menubar ${scroll ? 'navFixed' : ''}`}>
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
