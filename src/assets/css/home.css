@@ -551,12 +551,12 @@ latest-job CSS
   font-weight: 600;
 }
 
-.latest-job .latest-job-category li.active button::before {
+.latest-job .latest-job-category li button.active::before {
   top: calc(-50% - 100px);
   right: calc(0% - 50px);
 }
 
-.latest-job .latest-job-category li.active button {
+.latest-job .latest-job-category li button.active {
   color: white;
   border-color: var(--primary);
 }

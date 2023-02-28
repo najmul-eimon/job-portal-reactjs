@@ -7,9 +7,11 @@ import SingleLatestJob from './SingleLatestJob';
 const LatestJob = () => {
   let filterCategory = ["All", "Popular", "Recent", "Near"];
   const [latestJob, setLatestJob] = useState([]);
+  const [filterLatestJob, setFilterLatestJob] = useState([]);
+  const [activeFilter, setActiveFilter] = useState('all');
   const [isCompleted, setIsCompleted] = useState(false);
   const [index, setIndex] = useState(6);
-  const initialJobs = slice(latestJob, 0, index);
+  const initialJobs = slice(filterLatestJob, 0, index);
 
   const loadMore = () => {
     setIndex(index + 6);
@@ -24,9 +26,22 @@ const LatestJob = () => {
   useEffect(() => {
     fetch('data/company.json')
     .then(res => res.json())
-    .then(data => setLatestJob(data))
-
+    .then(data => {
+      setLatestJob(data)
+      setFilterLatestJob(data)
+    })
   }, [])
+
+  const handleFilter = (category) => {
+    if(category.toLowerCase() === "all"){
+      setFilterLatestJob(latestJob)
+      setActiveFilter('all')
+    }
+    else{
+      setFilterLatestJob(latestJob.filter((item) => item.status.toLowerCase() === category.toLowerCase()))
+      setActiveFilter(category.toLowerCase())
+    }
+  }
 
   return (
     <section className="latest-job section-gap">
@@ -40,7 +55,7 @@ const LatestJob = () => {
               {
                 filterCategory.map((category, index) => (
                   <li key={index}>
-                    <button type="button" className="animate-btn animate-btn-outline">{category}</button>
+                    <button type="button" className={`animate-btn animate-btn-outline ${activeFilter === category.toLocaleLowerCase() ? 'active' : ''}`} onClick={() => handleFilter(category)}>{category}</button>
                   </li>
                 ))
               }
