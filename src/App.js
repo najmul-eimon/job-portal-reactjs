@@ -3,6 +3,8 @@ import Layout from './layout/Layout';
 import Home from './pages/home/Home';
 import './App.css';
 import './assets/css/filter.css';
+import './assets/css/job-location.css';
+import './assets/css/blog.css';
 import './assets/css/home.css';
 
 function App() {

@@ -6,7 +6,7 @@ const Company = () => {
   const [companies, setCompanies] = useState([]);
 
   useEffect(() => {
-    fetch('data/company.json')
+    fetch('data/brands.json')
     .then(res => res.json())
     .then(data => setCompanies(data))
   }, [])
@@ -56,7 +56,7 @@ const Company = () => {
               {
                 companies.map(({id, image}) => (
                   <SwiperSlide key={id} className="item">
-                    <img src={image} alt="Logo" />
+                    <img src={require(`../../assets/images/company/${image}`)} alt="Logo" />
                   </SwiperSlide>
                 ))
               }

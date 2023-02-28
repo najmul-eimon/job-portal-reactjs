@@ -11,28 +11,28 @@ const StartWith = () => {
   }, [])
 
   return (
-    <div class="start-with section-gap">
-      <div class="container">
-        <div class="row align-items-center row-gutter">
-          <div class="col-md-6">
-            <div class="left-part">
+    <div className="start-with section-gap">
+      <div className="container">
+        <div className="row align-items-center row-gutter">
+          <div className="col-md-6">
+            <div className="left-part">
               <span>START WITH US</span>
               <h2>Explore thousands of jobs in one place and get the job of your dream</h2>
               <p>We know the best solution for all of your business ideas and we can help you solve all business problems</p>
-              <div class="buttons">
-                <button type="button" class="animate-btn animate-btn-fill find-btn">
-                  <i class="ph-magnifying-glass"></i>
+              <div className="buttons">
+                <button type="button" className="animate-btn animate-btn-fill find-btn">
+                  <i className="ph-magnifying-glass"></i>
                   Find here for new job
                 </button>
-                <button type="button" class="animate-btn animate-btn-outline reg-btn">
+                <button type="button" className="animate-btn animate-btn-outline reg-btn">
                   Register
                 </button>
               </div>
             </div>
           </div>
 
-          <div class="col-md-6">
-            <div class="right-part">
+          <div className="col-md-6">
+            <div className="right-part">
             {
               counterData.map((item) => <SingleCard key={item.id} data={item}/>)
             }

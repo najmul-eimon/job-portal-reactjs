@@ -5,6 +5,42 @@ job-location CSS
   background: rgba(229, 244, 255, 0.12);
 }
 
+.job-location .location-grid{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 24px;
+}
+
+.job-location .location-grid .item:first-child{
+  grid-column: 1 / 5;
+  grid-row: 1 / 2;
+}
+
+.job-location .location-grid .item:nth-child(2){
+  grid-column: 5 / 8;
+  grid-row: 1 / 2;
+}
+
+.job-location .location-grid .item:nth-child(3){
+  grid-column: 8 / 13;
+  grid-row: 1 / 2;
+}
+
+.job-location .location-grid .item:nth-child(4){
+  grid-column: 1 / 5;
+  grid-row: 2 / 3;
+}
+
+.job-location .location-grid .item:nth-child(5){
+  grid-column: 5 / 9;
+  grid-row: 2 / 3;
+}
+
+.job-location .location-grid .item:nth-child(6){
+  grid-column: 9 / 13;
+  grid-row: 2 / 3;
+}
+
 .job-location .item {
   padding: 12px;
   border-radius: 8px;
@@ -63,6 +99,7 @@ job-location CSS
 
 .job-location .item .image span {
   display: inline-block;
+  text-transform: capitalize;
   font-size: 14px;
   font-weight: 500;
   color: white;
@@ -106,12 +143,48 @@ job-location CSS
   width: fit-content;
 }
 
-.job-location a i {
+.job-location a .icons {
   font-size: 20px;
 }
 
 .job-location .hide-desktop {
   display: none;
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .job-location .location-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .job-location .location-grid .item:first-child{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  
+  .job-location .location-grid .item:nth-child(2){
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+  
+  .job-location .location-grid .item:nth-child(3){
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+  
+  .job-location .location-grid .item:nth-child(4){
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+  
+  .job-location .location-grid .item:nth-child(5){
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+  
+  .job-location .location-grid .item:nth-child(6){
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -134,8 +207,42 @@ job-location CSS
 
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 575px) {
   .job-location .hide-mobile {
     display: none;
+  }
+
+  .job-location .location-grid{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .job-location .location-grid .item:first-child{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  
+  .job-location .location-grid .item:nth-child(2){
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+  
+  .job-location .location-grid .item:nth-child(3){
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+  
+  .job-location .location-grid .item:nth-child(4){
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+  }
+  
+  .job-location .location-grid .item:nth-child(5){
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+  }
+  
+  .job-location .location-grid .item:nth-child(6){
+    grid-column: 1 / 2;
+    grid-row: 6 / 7;
   }
 }

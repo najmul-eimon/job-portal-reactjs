@@ -5,9 +5,9 @@ const SingleCard = ({data}) => {
   const {id, title, icon, count} = data;
 
   return (
-    <div class={`single-card ${id === 's1' ? 'job' : id === 's2' ? 'hired' : id === 's3' ? 'companies' : ''}`}>
-      <span class="icon-box">
-        <img src={icon} alt="Icon"/>
+    <div className={`single-card ${id === 's1' ? 'job' : id === 's2' ? 'hired' : id === 's3' ? 'companies' : ''}`}>
+      <span className="icon-box">
+        <img src={require(`../../../assets/images/svg/${icon}`)} alt="Icon"/>
       </span>
       <div>
         <h2>
@@ -15,7 +15,7 @@ const SingleCard = ({data}) => {
             {
               ({ countUpRef, start }) => (
                 <VisibilitySensor onChange={start} delayedCall>
-                  <span class="counter" ref={countUpRef}/>
+                  <span className="counter" ref={countUpRef}/>
                 </VisibilitySensor>
               )
             }

@@ -4,7 +4,9 @@ import Banner from '../../components/home/banner/Banner';
 import PopularCategory from '../../components/home/category/PopularCategory';
 import Company from '../../components/home/Company';
 import StartWith from '../../components/home/startWith/StartWith';
-import LatestJob from '../../components/latestJob/LatestJob';
+import LatestJob from '../../components/home/latestJob/LatestJob';
+import JobByLocation from '../../components/home/JobByLocation';
+import Blog from '../../components/home/Blog';
 
 const Home = () => {
   useEffect(() => {
@@ -24,6 +26,8 @@ const Home = () => {
       <PopularCategory/>
       <AboutUs/>
       <LatestJob/>
+      <JobByLocation/>
+      <Blog/>
     </>
   )
 }

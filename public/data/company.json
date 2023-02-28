@@ -1,98 +1,206 @@
 [
   {
-    "id": "c1",
-    "image": "../images/company/blvck.svg"
+    "id": "com1",
+    "name": "Infrastructure Development Company Limited (IDCOL)",
+    "logo": "tbde.png",
+    "location": "New York, USA",
+    "address": "L/36, S/1, Down street, New York, USA",
+    "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.",
+    "field": "Technology",
+    "status": "popular",
+    "jobs": [
+      {
+        "id": "job11",
+        "title": "Sr. Executive UI/UX Designer",
+        "publish": "1 h ago",
+        "type": "Full time",
+        "description": "Lorem ipsum dolor sit amet consectetur. Urna ultrices leo amet lobortis nisl vel eu dapibus a. Sit mauris scelerisque maecenas at sit at arcu imperdiet",
+        "tags": ["XD", "Figma", "Photoshop"],
+        "rate": "250",
+        "status": "popular"
+      },
+      {
+        "id": "job12",
+        "title": "Assistant Manager/Deputy Manager (sales & Marketing)",
+        "publish": "1 h ago",
+        "type": "Part time",
+        "description": "Lorem ipsum dolor sit amet consectetur. Urna ultrices leo amet lobortis nisl vel eu dapibus a. Sit mauris scelerisque maecenas at sit at arcu imperdiet",
+        "tags": ["XD", "Figma", "Photoshop"],
+        "rate": "250",
+        "status": "recent"
+      },
+      {
+        "id": "job13",
+        "title": "Sr. Executive, Industrial Design." ,
+        "publish": "1 h ago",
+        "type": "Full time",
+        "description": "Lorem ipsum dolor sit amet consectetur. Urna ultrices leo amet lobortis nisl vel eu dapibus a. Sit mauris scelerisque maecenas at sit at arcu imperdiet",
+        "tags": ["XD", "Figma", "Photoshop"],
+        "rate": "250",
+        "status": "near"
+      },
+      {
+        "id": "job14",
+        "title": "Executive, Web Developer",
+        "publish": "1 h ago",
+        "type": "Remote",
+        "description": "Lorem ipsum dolor sit amet consectetur. Urna ultrices leo amet lobortis nisl vel eu dapibus a. Sit mauris scelerisque maecenas at sit at arcu imperdiet",
+        "tags": ["XD", "Figma", "Photoshop"],
+        "rate": "250",
+        "status": "popular"
+      },
+      {
+        "id": "job15",
+        "title": "Senior Executive AR/VR",
+        "publish": "1 h ago",
+        "type": "Full time",
+        "description": "Lorem ipsum dolor sit amet consectetur. Urna ultrices leo amet lobortis nisl vel eu dapibus a. Sit mauris scelerisque maecenas at sit at arcu imperdiet",
+        "tags": ["XD", "Figma", "Photoshop"],
+        "rate": "250",
+        "status": "recent"
+      },
+      {
+        "id": "job16",
+        "title": "Senior Executive Mobile Application Developer",
+        "publish": "1 h ago",
+        "type": "Part time",
+        "description": "Lorem ipsum dolor sit amet consectetur. Urna ultrices leo amet lobortis nisl vel eu dapibus a. Sit mauris scelerisque maecenas at sit at arcu imperdiet",
+        "tags": ["XD", "Figma", "Photoshop"],
+        "rate": "250",
+        "status": "near"
+      },
+      {
+        "id": "job17",
+        "title": "Executive Graphic Designer",
+        "publish": "1 h ago",
+        "type": "Remote",
+        "description": "Lorem ipsum dolor sit amet consectetur. Urna ultrices leo amet lobortis nisl vel eu dapibus a. Sit mauris scelerisque maecenas at sit at arcu imperdiet",
+        "tags": ["XD", "Figma", "Photoshop"],
+        "rate": "250",
+        "status": "popular"
+      },
+      {
+        "id": "job18",
+        "title": "UI/UX and Graphic Designer",
+        "publish": "1 h ago",
+        "type": "Full time",
+        "description": "Lorem ipsum dolor sit amet consectetur. Urna ultrices leo amet lobortis nisl vel eu dapibus a. Sit mauris scelerisque maecenas at sit at arcu imperdiet",
+        "tags": ["XD", "Figma", "Photoshop"],
+        "rate": "250",
+        "status": "recent"
+      },
+      {
+        "id": "job19",
+        "title": "Senior Marketing Manager",
+        "publish": "1 h ago",
+        "type": "Full time",
+        "description": "Lorem ipsum dolor sit amet consectetur. Urna ultrices leo amet lobortis nisl vel eu dapibus a. Sit mauris scelerisque maecenas at sit at arcu imperdiet",
+        "tags": ["XD", "Figma", "Photoshop"],
+        "rate": "250",
+        "status": "near"
+      }
+    ]
   },
   {
-    "id": "c2",
-    "image": "../images/company/bysl.svg"
-  },
-  {
-    "id": "c3",
-    "image": "../images/company/eversend.svg"
-  },
-  {
-    "id": "c4",
-    "image": "../images/company/feedly.svg"
-  },
-  {
-    "id": "c5",
-    "image": "../images/company/illiyeen.svg"
-  },
-  {
-    "id": "c6",
-    "image": "../images/company/legends.svg"
-  },
-  {
-    "id": "c7",
-    "image": "../images/company/synckloud.svg"
-  },
-  {
-    "id": "c8",
-    "image": "../images/company/zomato.svg"
-  },
-  {
-    "id": "c9",
-    "image": "../images/company/illiyeen.svg"
-  },
-  {
-    "id": "c10",
-    "image": "../images/company/blvck.svg"
-  },
-  {
-    "id": "c11",
-    "image": "../images/company/bysl.svg"
-  },
-  {
-    "id": "c12",
-    "image": "../images/company/eversend.svg"
-  },
-  {
-    "id": "c13",
-    "image": "../images/company/feedly.svg"
-  },
-  {
-    "id": "c14",
-    "image": "../images/company/synckloud.svg"
-  },
-  {
-    "id": "c15",
-    "image": "../images/company/zomato.svg"
-  },
-  {
-    "id": "c16",
-    "image": "../images/company/blvck.svg"
-  },
-  {
-    "id": "c17",
-    "image": "../images/company/bysl.svg"
-  },
-  {
-    "id": "c18",
-    "image": "../images/company/eversend.svg"
-  },
-  {
-    "id": "c19",
-    "image": "../images/company/feedly.svg"
-  },
-  {
-    "id": "c20",
-    "image": "../images/company/legends.svg"
-  },
-  {
-    "id": "c21",
-    "image": "../images/company/synckloud.svg"
-  },
-  {
-    "id": "c22",
-    "image": "../images/company/zomato.svg"
-  },
-  {
-    "id": "c23",
-    "image": "../images/company/blvck.svg"
-  },
-  {
-    "id": "c24",
-    "image": "../images/company/bysl.svg"
+    "id": "com2",
+    "name": "Infrastructure Development Company Limited (IDCOL)",
+    "logo": "tbde.png",
+    "location": "Parish, France",
+    "address": "L/36, S/1, Down street, New York, USA",
+    "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.",
+    "field": "Technology",
+    "status": "popular",
+    "jobs": [
+      {
+        "id": "job11",
+        "title": "Sr. Executive UI/UX Designer",
+        "publish": "1 h ago",
+        "type": "Full time",
+        "description": "Lorem ipsum dolor sit amet consectetur. Urna ultrices leo amet lobortis nisl vel eu dapibus a. Sit mauris scelerisque maecenas at sit at arcu imperdiet",
+        "tags": ["XD", "Figma", "Photoshop"],
+        "rate": "250",
+        "status": "popular"
+      },
+      {
+        "id": "job12",
+        "title": "Assistant Manager/Deputy Manager (sales & Marketing)",
+        "publish": "1 h ago",
+        "type": "Part time",
+        "description": "Lorem ipsum dolor sit amet consectetur. Urna ultrices leo amet lobortis nisl vel eu dapibus a. Sit mauris scelerisque maecenas at sit at arcu imperdiet",
+        "tags": ["XD", "Figma", "Photoshop"],
+        "rate": "250",
+        "status": "recent"
+      },
+      {
+        "id": "job13",
+        "title": "Sr. Executive, Industrial Design." ,
+        "publish": "1 h ago",
+        "type": "Full time",
+        "description": "Lorem ipsum dolor sit amet consectetur. Urna ultrices leo amet lobortis nisl vel eu dapibus a. Sit mauris scelerisque maecenas at sit at arcu imperdiet",
+        "tags": ["XD", "Figma", "Photoshop"],
+        "rate": "250",
+        "status": "near"
+      },
+      {
+        "id": "job14",
+        "title": "Executive, Web Developer",
+        "publish": "1 h ago",
+        "type": "Remote",
+        "description": "Lorem ipsum dolor sit amet consectetur. Urna ultrices leo amet lobortis nisl vel eu dapibus a. Sit mauris scelerisque maecenas at sit at arcu imperdiet",
+        "tags": ["XD", "Figma", "Photoshop"],
+        "rate": "250",
+        "status": "popular"
+      },
+      {
+        "id": "job15",
+        "title": "Senior Executive AR/VR",
+        "publish": "1 h ago",
+        "type": "Full time",
+        "description": "Lorem ipsum dolor sit amet consectetur. Urna ultrices leo amet lobortis nisl vel eu dapibus a. Sit mauris scelerisque maecenas at sit at arcu imperdiet",
+        "tags": ["XD", "Figma", "Photoshop"],
+        "rate": "250",
+        "status": "recent"
+      },
+      {
+        "id": "job16",
+        "title": "Senior Executive Mobile Application Developer",
+        "publish": "1 h ago",
+        "type": "Part time",
+        "description": "Lorem ipsum dolor sit amet consectetur. Urna ultrices leo amet lobortis nisl vel eu dapibus a. Sit mauris scelerisque maecenas at sit at arcu imperdiet",
+        "tags": ["XD", "Figma", "Photoshop"],
+        "rate": "250",
+        "status": "near"
+      },
+      {
+        "id": "job17",
+        "title": "Executive Graphic Designer",
+        "publish": "1 h ago",
+        "type": "Remote",
+        "description": "Lorem ipsum dolor sit amet consectetur. Urna ultrices leo amet lobortis nisl vel eu dapibus a. Sit mauris scelerisque maecenas at sit at arcu imperdiet",
+        "tags": ["XD", "Figma", "Photoshop"],
+        "rate": "250",
+        "status": "popular"
+      },
+      {
+        "id": "job18",
+        "title": "UI/UX and Graphic Designer",
+        "publish": "1 h ago",
+        "type": "Full time",
+        "description": "Lorem ipsum dolor sit amet consectetur. Urna ultrices leo amet lobortis nisl vel eu dapibus a. Sit mauris scelerisque maecenas at sit at arcu imperdiet",
+        "tags": ["XD", "Figma", "Photoshop"],
+        "rate": "250",
+        "status": "recent"
+      },
+      {
+        "id": "job19",
+        "title": "Senior Marketing Manager",
+        "publish": "1 h ago",
+        "type": "Full time",
+        "description": "Lorem ipsum dolor sit amet consectetur. Urna ultrices leo amet lobortis nisl vel eu dapibus a. Sit mauris scelerisque maecenas at sit at arcu imperdiet",
+        "tags": ["XD", "Figma", "Photoshop"],
+        "rate": "250",
+        "status": "near"
+      }
+    ]
   }
 ]

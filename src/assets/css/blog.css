@@ -129,11 +129,11 @@ blog CSS
   left: -12px;
 }
 
-.blog-pagination.swiper-pagination {
+.blog .swiper-pagination {
   bottom: 0;
 }
 
-.blog-pagination .swiper-pagination-bullet {
+.blog .swiper-pagination-bullet {
   margin: 0 8px;
   height: 12px;
   width: 12px;
@@ -142,7 +142,7 @@ blog CSS
   transition: all 0.3s linear;
 }
 
-.blog-pagination .swiper-pagination-bullet-active {
+.blog .swiper-pagination-bullet-active {
   width: 34px;
   background-color: #005999;
   opacity: 1;

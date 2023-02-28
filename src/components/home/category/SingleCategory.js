@@ -4,11 +4,11 @@ const SingleCategory = ({data}) => {
   const {tag, image, title, description} = data;
 
   return (
-    <div class="col-sm-6 col-lg-4 col-xl-3">
-      <div class="single-category">
-        <div class="image">
+    <div className="col-sm-6 col-lg-4 col-xl-3">
+      <div className="single-category">
+        <div className="image">
           <span>{tag}</span>
-          <img src={image} alt="Category"/>
+          <img src={require(`../../../assets/images/category/${image}`)} alt="Category"/>
         </div>
         <h3>{title}</h3>
         <p>{description}</p>

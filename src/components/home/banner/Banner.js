@@ -1,4 +1,4 @@
-import { bannerBg } from '../../../assets/images/svgFiles/banner';
+import { bannerBg } from '../../../assets/images/svg/banner';
 import suitcaseIcon from '../../../assets/images/svg/suitcase-grey.svg';
 import mapIcon from '../../../assets/images/svg/map-trifold.svg';
 import pencilIcon from '../../../assets/images/svg/pencil-line.svg';

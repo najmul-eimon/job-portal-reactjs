@@ -1,6 +1,6 @@
 const SectionTitle = ({subtitle, title, description}) => {
   return (
-    <div class="title">
+    <div className="title">
       <span>{subtitle}</span>
       <h2>{title}</h2>
       <p>{description}</p>

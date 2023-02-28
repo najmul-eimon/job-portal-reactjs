@@ -27,15 +27,15 @@ const PopularCategory = () => {
   }, []);
 
   return (
-    <section class="popular-category section-gap">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
+    <section className="popular-category section-gap">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-12">
             {/* section title */}
             <SectionTitle subtitle="Popular" title="Popular categories" description="Helping professionals find their dream job & Helping professionals find their dream job." />
 
             {/* section data */}
-            <div class="row row-gutter">
+            <div className="row row-gutter">
               {
                 initialCategories.map((category) => <SingleCategory key={category.id} data={category} />)
               }
@@ -44,7 +44,7 @@ const PopularCategory = () => {
             {/* load more button */}
             {
               !isCompleted && (
-                <div class="col-lg-12">
+                <div className="col-lg-12">
                   <LoadMoreButton action={loadMore}/>
                 </div>
               )
