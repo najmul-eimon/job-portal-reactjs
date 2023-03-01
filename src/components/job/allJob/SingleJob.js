@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import locationIcon from '../../../assets/images/svg/map-trifold.svg';
 
 const SingleJob = ({data}) => {
-  const {companyId, description, tags, rate} = data;
+  const {companyId, title, publish, type, description, tags, rate} = data;
   const [companies, setCompanies] = useState([]);
 
   useEffect(() => {
@@ -33,7 +33,7 @@ const SingleJob = ({data}) => {
 
         {/* job description */}
         <div className="job-title">
-          <h4>UI/UX Designer Fultime</h4>
+          <h4>{title}</h4>
           <ul className="d-flex align-items-center">
             <li className="d-flex align-items-center">
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -42,7 +42,7 @@ const SingleJob = ({data}) => {
                 <path d="M13.125 5.625V4.375C13.125 4.04348 12.9933 3.72554 12.7589 3.49112C12.5245 3.2567 12.2065 3.125 11.875 3.125H8.125C7.79348 3.125 7.47554 3.2567 7.24112 3.49112C7.0067 3.72554 6.875 4.04348 6.875 4.375V5.625" stroke="#0075C8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M2.5 12.5H17.5" stroke="#0075C8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
-              Full time
+              {type}
             </li>
             <li className="d-flex align-items-center">
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -50,7 +50,7 @@ const SingleJob = ({data}) => {
                 <path d="M10 17.5C14.1421 17.5 17.5 14.1421 17.5 10C17.5 5.85786 14.1421 2.5 10 2.5C5.85786 2.5 2.5 5.85786 2.5 10C2.5 14.1421 5.85786 17.5 10 17.5Z" stroke="#0075C8" stroke-width="1.5" stroke-miterlimit="10"/>
                 <path d="M10 5.625V10H14.375" stroke="#0075C8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
-              1 h ago
+              {publish}
             </li>
           </ul>
         </div>

@@ -126,6 +126,9 @@ all-job CSS
   font-weight: 700;
   font-size: 16px;
   color: var(--primary-text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .all-job .single-job .job-title ul {
