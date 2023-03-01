@@ -67,7 +67,7 @@ filter container  CSS
   color: var(--primary);
 }
 
-.filter-container .filter-button i {
+.filter-container .filter-button .icon {
   font-size: 24px;
 }
 

@@ -12,7 +12,6 @@ const PopularCategory = () => {
 
   const loadMore = () => {
     setIndex(index + 8);
-    console.log(index);
     if (index >= allCategory.length) {
       setIsCompleted(true);
     } else {

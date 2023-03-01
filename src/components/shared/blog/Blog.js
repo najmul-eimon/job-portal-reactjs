@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
-import SectionTitle from '../shared/SectionTitle';
-import SingleBlog from "../shared/SingleBlog";
+import SectionTitle from '../SectionTitle';
+import SingleBlog from "./SingleBlog";
 
-const Blog = () => {
+const Blog = ({dataClass}) => {
   const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {
@@ -14,7 +14,7 @@ const Blog = () => {
   },[])
 
   return (
-    <section className="blog section-gap">
+    <section className={`blog section-gap ${dataClass ? dataClass : ''}`}>
       <div className="container">
         <div className="row">
           <div className="col-lg-12">

@@ -6,7 +6,7 @@ const SingleBlog = ({data}) => {
   return (
     <Link to={`/blog-details/${id}`} className="single-blog">
       <div className="image">
-        <img src={require(`../../assets/images/blog/${image}`)} alt="Blog"/>
+        <img src={require(`../../../assets/images/blog/${image}`)} alt="Blog"/>
       </div>
 
       <span>{category}</span>
@@ -15,7 +15,7 @@ const SingleBlog = ({data}) => {
       
       <div className="blog-author">
         <div className="author">
-          <img src={require(`../../assets/images/blog/${authorImg}`)} alt="Avatar"/>
+          <img src={require(`../../../assets/images/blog/${authorImg}`)} alt="Avatar"/>
         </div>
         <div>
           <h4>{author}</h4>

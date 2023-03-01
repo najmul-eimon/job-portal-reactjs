@@ -70,7 +70,7 @@ filter CSS
   padding: 18px 28px;
 }
 
-.filter-job .search-btn i {
+.filter-job .search-btn .search-icon {
   font-size: 20px;
   color: white;
 }

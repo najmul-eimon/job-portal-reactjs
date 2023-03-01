@@ -2,13 +2,13 @@ import {HiArrowRight} from 'react-icons/hi2';
 import { Link } from 'react-router-dom';
 
 const SingleLatestJob = ({data}) => {
-  const {name, logo, jobs} = data;
+  const {name, image, jobs} = data;
 
   return (
     <div className="col-md-6 col-lg-6 col-xl-4 mix popular">
       <div className="single-job">
         <div className="icon">
-          <img src={require(`../../../assets/images/company/${logo}`)} alt="Company"/>
+          <img src={image} alt="Company"/>
         </div>
         <div className="job-content">
           <div>
