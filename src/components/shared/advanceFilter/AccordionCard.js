@@ -3,6 +3,7 @@ import { FiSearch } from 'react-icons/fi';
 import Checkbox from './Checkbox';
 
 const AccordionCard = ({eventKey, title, dataClass, data, label}) => {
+
   return (
     <Accordion.Item eventKey={eventKey}>
       <Accordion.Header>{title}</Accordion.Header>

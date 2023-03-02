@@ -41,6 +41,7 @@ company-banner CSS
 .company-banner .about-company .heading h2 {
   font-weight: 800;
   font-size: 32px;
+  line-height: 42px;
   color: var(--primary-text2);
   padding-bottom: 12px;
 }
@@ -116,12 +117,14 @@ company-banner CSS
 @media (min-width: 992px) and (max-width: 1199px) {
   .company-banner .about-company .heading h2 {
     font-size: 22px;
+    line-height: 32px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .company-banner .about-company .heading h2 {
     font-size: 18px;
+    line-height: 28px;
     padding-bottom: 8px;
   }
 
@@ -151,6 +154,7 @@ company-banner CSS
 
   .company-banner .about-company .heading h2 {
     font-size: 18px;
+    line-height: 28px;
     padding-bottom: 8px;
   }
 

@@ -1,30 +1,24 @@
+import { useState } from 'react';
 import { slice } from 'lodash';
-import { useEffect, useState } from 'react'
 import LoadMoreButton from '../shared/LoadMoreButton';
 import SectionTitle from '../shared/SectionTitle';
 import SingleLocationCard from '../shared/SingleLocationCard';
+import {locations} from '../../data/location';
 
 const JobByLocation = () => {
-  const [allLocations, setAllLocations] = useState([]);
   const [isCompleted, setIsCompleted] = useState(false);
   const [index, setIndex] = useState(8);
-  const initialLocations = slice(allLocations, 0, index);
+  const initialLocations = slice(locations, 0, index);
 
   const loadMore = () => {
     setIndex(index + 8);
     console.log(index);
-    if (index >= allLocations.length) {
+    if (index >= locations.length) {
       setIsCompleted(true);
     } else {
       setIsCompleted(false);
     }
   }
-
-  useEffect(() => {
-    fetch('data/location.json')
-    .then(res => res.json())
-    .then(data => setAllLocations(data))
-  }, [])
 
   return (
     <section className="job-location section-gap">

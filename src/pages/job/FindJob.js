@@ -17,7 +17,7 @@ const FindJob = () => {
     <>
       <JobBanner/>
       <AllJob/>
-      <Blog dataclassName="job-blog"/>
+      <Blog dataClass="job-blog"/>
       <Newsletter/>
     </>
   )

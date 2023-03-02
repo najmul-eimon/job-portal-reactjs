@@ -1,20 +1,12 @@
-import { useEffect, useState } from "react";
 import locationIcon from '../../../assets/images/svg/map-trifold.svg';
+import {companies} from '../../../data/company';
 
 const SingleJob = ({data}) => {
   const {companyId, title, publish, type, description, tags, rate} = data;
-  const [companies, setCompanies] = useState([]);
-
-  useEffect(() => {
-    fetch('data/company.json')
-    .then(res => res.json())
-    .then(data => setCompanies(data))
-  }, [])
-
-  const singleCompany = companies?.find((company) => company.id === companyId);
+  const singleCompany = companies.find((company) => company.id === companyId);
 
   return (
-    <div className="col-md-6 col-lg-4 mix popular">
+    <div className="col-md-6 col-lg-4">
       <div className="single-job">
 
         {/* card title */}

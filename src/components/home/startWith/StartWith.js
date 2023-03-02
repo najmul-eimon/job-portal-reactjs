@@ -1,15 +1,7 @@
-import { useEffect, useState } from 'react';
 import SingleCard from './SingleCard';
+import {startCount} from '../../../data/startCount';
 
 const StartWith = () => {
-  const [counterData, setCounterData] = useState([]);
-
-  useEffect(() => {
-    fetch('data/startCount.json')
-    .then(res => res.json())
-    .then(data => setCounterData(data));
-  }, [])
-
   return (
     <div className="start-with section-gap">
       <div className="container">
@@ -34,7 +26,7 @@ const StartWith = () => {
           <div className="col-md-6">
             <div className="right-part">
             {
-              counterData.map((item) => <SingleCard key={item.id} data={item}/>)
+              startCount.map((item) => <SingleCard key={item.id} data={item}/>)
             }
             </div>
           </div>

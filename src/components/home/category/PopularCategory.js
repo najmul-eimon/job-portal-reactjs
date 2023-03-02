@@ -1,29 +1,23 @@
-import React, { useEffect, useState } from 'react'
+import { useState } from 'react';
 import SectionTitle from '../../shared/SectionTitle';
 import SingleCategory from './SingleCategory';
 import LoadMoreButton from '../../shared/LoadMoreButton';
 import { slice } from 'lodash';
+import {categories} from '../../../data/category';
 
 const PopularCategory = () => {
-  const [allCategory, setAllCategory] = useState([]);
   const [isCompleted, setIsCompleted] = useState(false);
   const [index, setIndex] = useState(8);
-  const initialCategories = slice(allCategory, 0, index);
+  const initialCategories = slice(categories, 0, index);
 
   const loadMore = () => {
     setIndex(index + 8);
-    if (index >= allCategory.length) {
+    if (index >= categories.length) {
       setIsCompleted(true);
     } else {
       setIsCompleted(false);
     }
   }
-
-  useEffect(() => {
-    fetch('data/category.json')
-    .then(res => res.json())
-    .then(data => setAllCategory(data))
-  }, []);
 
   return (
     <section className="popular-category section-gap">

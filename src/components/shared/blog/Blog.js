@@ -1,17 +1,10 @@
-import { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
 import SectionTitle from '../SectionTitle';
 import SingleBlog from "./SingleBlog";
+import {blogs} from '../../../data/blog';
 
 const Blog = ({dataClass}) => {
-  const [blogs, setBlogs] = useState([]);
-
-  useEffect(() => {
-    fetch('data/blog.json')
-    .then(res => res.json())
-    .then(data => setBlogs(data));
-  },[])
 
   return (
     <section className={`blog section-gap ${dataClass ? dataClass : ''}`}>

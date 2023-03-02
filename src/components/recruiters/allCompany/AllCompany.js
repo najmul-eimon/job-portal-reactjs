@@ -1,54 +1,47 @@
+import { useState } from 'react'
 import { slice } from 'lodash';
-import { useEffect, useState } from 'react';
-import LoadMoreButton from '../../shared/LoadMoreButton';
 import AdvanceFilter from '../../shared/advanceFilter/AdvanceFilter';
-import SingleJob from './SingleJob';
+import LoadMoreButton from '../../shared/LoadMoreButton';
+import SingleCompanyCard from './SingleCompanyCard';
 import {companies} from '../../../data/company';
 
-const AllJob = () => {
+const AllCompany = () => {
   const categories = ["All", "Popular", "Recent", "Near"];
   const [active, setActive] = useState('all');
-  const [allJobs, setAllJobs] = useState([]);
-  const [filterAllJobs, setFilterAllJobs] = useState([]);
+  const [filterCompanies, setFilterCompanies] = useState(companies);
 
   const [isCompleted, setIsCompleted] = useState(false);
   const [index, setIndex] = useState(12);
-  const initialJobs = slice(filterAllJobs, 0, index);
+  const initialCompanies = slice(filterCompanies, 0, index);
 
   const loadMore = () => {
     setIndex(index + 12);
-    if (index >= filterAllJobs.length) {
+    if (index >= filterCompanies.length) {
       setIsCompleted(true);
     } else {
       setIsCompleted(false);
     }
   }
-  
-  useEffect(() => {
-    let getJobs = companies.map((company) => company.jobs.slice(0,2)).flat();
-    setAllJobs(getJobs)
-    setFilterAllJobs(getJobs)
-  }, [])
 
   const handleFilter = (category) => {
     if(category.toLowerCase() === 'all'){
       setActive('all');
-      setFilterAllJobs(allJobs);
+      setFilterCompanies(companies);
     }
     else{
       setActive(category.toLocaleLowerCase())
-      setFilterAllJobs(allJobs.filter((job) => job.status.toLowerCase() === category.toLowerCase()))
+      setFilterCompanies(companies.filter((job) => job.status.toLowerCase() === category.toLowerCase()))
     }
   }
 
   return (
-    <section className="all-job section-gap">
+    <section className="all-company section-gap">
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
             {/* page count */}
             <div className="page-count">
-              <p>Showing <span>01-{initialJobs.length < 10 ? '0' + initialJobs.length : initialJobs.length}</span> of <span>{allJobs.length < 10 ? '0' + allJobs.length : allJobs.length} </span> jobs</p>
+              <p>Showing <span>01-{initialCompanies.length < 10 ? '0' + initialCompanies.length : initialCompanies.length}</span> of <span>{companies.length < 10 ? '0' + companies.length : companies.length} </span> jobs</p>
             </div>
 
             {/* filter-container */}
@@ -66,11 +59,11 @@ const AllJob = () => {
               {/* advance filter */}
               <AdvanceFilter/>
             </div>
-
-            {/* job cards */}
+            
+            {/* all company */}
             <div className="row row-gutter">
               {
-                initialJobs.map((job) => <SingleJob key={job.id} data={job}/>)
+                initialCompanies.map((company) => <SingleCompanyCard key={company.id} data={company}/>)
               }
             </div>
 
@@ -89,4 +82,4 @@ const AllJob = () => {
   )
 }
 
-export default AllJob;
+export default AllCompany;

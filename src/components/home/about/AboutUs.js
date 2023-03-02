@@ -1,16 +1,8 @@
-import React, { useEffect, useState } from 'react'
 import SectionTitle from '../../shared/SectionTitle';
 import SingleItem from './SingleItem';
+import {about} from '../../../data/aboutUs';
 
 const AboutUs = () => {
-  const [aboutData, setAboutData] = useState([]);
-
-  useEffect(() => {
-    fetch('data/aboutUs.json')
-    .then(res => res.json())
-    .then(data => setAboutData(data))
-  }, [])
-
   return (
     <section className="about section-gap">
       <div className="container">
@@ -24,7 +16,7 @@ const AboutUs = () => {
           <div className="col-lg-8 offset-lg-2">
             <div className="row row-gutter">
               {
-                aboutData.map((item) => <SingleItem key={item.id} data={item} />)
+                about.map((item) => <SingleItem key={item.id} data={item} />)
               }
             </div>
           </div>

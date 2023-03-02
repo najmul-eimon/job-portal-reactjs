@@ -1,44 +1,35 @@
+import { useState } from 'react';
 import { slice } from 'lodash';
-import React, { useEffect, useState } from 'react'
 import LoadMoreButton from '../../shared/LoadMoreButton';
 import SectionTitle from '../../shared/SectionTitle';
 import SingleLatestJob from './SingleLatestJob';
+import {companies} from '../../../data/company';
 
 const LatestJob = () => {
   let filterCategory = ["All", "Popular", "Recent", "Near"];
-  const [latestJob, setLatestJob] = useState([]);
-  const [filterLatestJob, setFilterLatestJob] = useState([]);
+  const [filterLatestJob, setFilterLatestJob] = useState(companies);
   const [activeFilter, setActiveFilter] = useState('all');
+
   const [isCompleted, setIsCompleted] = useState(false);
   const [index, setIndex] = useState(6);
   const initialJobs = slice(filterLatestJob, 0, index);
 
   const loadMore = () => {
     setIndex(index + 6);
-    console.log(index);
-    if (index >= latestJob.length) {
+    if (index >= filterLatestJob.length) {
       setIsCompleted(true);
     } else {
       setIsCompleted(false);
     }
   }
 
-  useEffect(() => {
-    fetch('data/company.json')
-    .then(res => res.json())
-    .then(data => {
-      setLatestJob(data)
-      setFilterLatestJob(data)
-    })
-  }, [])
-
   const handleFilter = (category) => {
     if(category.toLowerCase() === "all"){
-      setFilterLatestJob(latestJob)
+      setFilterLatestJob(companies)
       setActiveFilter('all')
     }
     else{
-      setFilterLatestJob(latestJob.filter((item) => item.status.toLowerCase() === category.toLowerCase()))
+      setFilterLatestJob(companies.filter((item) => item.status.toLowerCase() === category.toLowerCase()))
       setActiveFilter(category.toLowerCase())
     }
   }

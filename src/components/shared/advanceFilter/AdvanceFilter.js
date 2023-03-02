@@ -34,7 +34,7 @@ const AdvanceFilter = () => {
 
             <Accordion defaultActiveKey={['0']} alwaysOpen>
               {/* item 1 */}
-              <AccordionCard eventKey="0" dataclassName="industry" title="industry" data={industry} label={true}/>
+              <AccordionCard eventKey="0" dataClass="industry" title="industry" data={industry} label={true}/>
 
               {/* item 2 */}
               <Accordion.Item eventKey="1">
@@ -62,13 +62,13 @@ const AdvanceFilter = () => {
               </Accordion.Item>
 
               {/* item 3 */}
-              <AccordionCard eventKey="2" dataclassName="position" title="position" data={position} label={false}/>
+              <AccordionCard eventKey="2" dataClass="position" title="position" data={position} label={false}/>
 
               {/* item 4 */}
-              <AccordionCard eventKey="3" dataclassName="experience" title="Experience Level" data={experience} label={false}/>
+              <AccordionCard eventKey="3" dataClass="experience" title="Experience Level" data={experience} label={false}/>
 
               {/* item 5 */}
-              <AccordionCard eventKey="4" dataclassName="job" title="Job type" data={jobType} label={false}/>
+              <AccordionCard eventKey="4" dataClass="job" title="Job type" data={jobType} label={false}/>
             </Accordion>
           </div>
         )

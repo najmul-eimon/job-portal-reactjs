@@ -7,7 +7,7 @@ const SingleLocationCard = ({data}) => {
     <div className="item">
       <div className="image">
         <span>{status}</span>
-        <img src={require(`../../assets/images/job-location/${image}`)} alt="Location"/>
+        <img src={image} alt="Location"/>
       </div>
       <h3>{location}</h3>
       <p>

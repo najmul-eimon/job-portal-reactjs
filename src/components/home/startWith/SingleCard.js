@@ -7,7 +7,7 @@ const SingleCard = ({data}) => {
   return (
     <div className={`single-card ${id === 's1' ? 'job' : id === 's2' ? 'hired' : id === 's3' ? 'companies' : ''}`}>
       <span className="icon-box">
-        <img src={require(`../../../assets/images/svg/${icon}`)} alt="Icon"/>
+        <img src={icon} alt="Icon"/>
       </span>
       <div>
         <h2>

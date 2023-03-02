@@ -1,16 +1,8 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
-import { useEffect, useState } from "react";
+import {brands} from '../../data/brands';
 
 const Company = () => {
-  const [companies, setCompanies] = useState([]);
-
-  useEffect(() => {
-    fetch('data/brands.json')
-    .then(res => res.json())
-    .then(data => setCompanies(data))
-  }, [])
-
   return (
     <section className="company section-gap">
       <div className="container-fluid">
@@ -54,9 +46,9 @@ const Company = () => {
               className="company-slider"
             >
               {
-                companies.map(({id, image}) => (
+                brands.map(({id, image}) => (
                   <SwiperSlide key={id} className="item">
-                    <img src={require(`../../assets/images/company/${image}`)} alt="Logo" />
+                    <img src={image} alt="Logo" />
                   </SwiperSlide>
                 ))
               }
