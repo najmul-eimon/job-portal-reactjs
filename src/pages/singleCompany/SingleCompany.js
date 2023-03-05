@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import Newsletter from '../../components/shared/Newsletter';
 import CompanyBanner from '../../components/singleCompany/CompanyBanner';
-import CompanyDetails from '../../components/singleCompany/CompanyDetails';
+import CompanyDetails from '../../components/singleCompany/companyDetails/CompanyDetails';
+import CompanyLocation from '../../components/singleCompany/CompanyLocation';
 import {companies} from '../../data/company';
 
 const SingleCompany = () => {
@@ -24,6 +26,8 @@ const SingleCompany = () => {
     <>
       <CompanyBanner singleCompany={singleCompany}/>
       <CompanyDetails singleCompany={singleCompany}/>
+      <CompanyLocation/>
+      <Newsletter/>
     </>
   )
 }

@@ -338,7 +338,7 @@ location-job CSS
   border-radius: 50%;
 }
 
-.location-job .pagination li a.active {
+.location-job .pagination li.active a {
   background: rgba(7, 7, 7, 0.08);
 }
 
@@ -465,11 +465,11 @@ job-location CSS
   padding-bottom: 36px;
 }
 
-.job-pagination.swiper-pagination {
+.job-location-slider .swiper-pagination {
   bottom: 0;
 }
 
-.job-pagination .swiper-pagination-bullet {
+.job-location-slider .swiper-pagination-bullet {
   margin: 0 8px;
   height: 12px;
   width: 12px;
@@ -478,7 +478,7 @@ job-location CSS
   transition: all 0.3s linear;
 }
 
-.job-pagination .swiper-pagination-bullet-active {
+.job-location-slider .swiper-pagination-bullet-active {
   width: 34px;
   background-color: #005999;
   opacity: 1;

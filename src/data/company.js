@@ -30,7 +30,7 @@ export const companies = [
       {
         id: "job12",
         companyId: "com1",
-        title: "Assistant Manager/Deputy Manager (sales & Marketing)",
+        title: "Assistant Manager/Deputy Manager (Sales & Marketing)",
         publish: "2 h ago",
         type: "Part time",
         description: "Lorem ipsum dolor sit amet consectetur. Urna ultrices leo amet lobortis nisl vel eu dapibus a. Sit mauris scelerisque maecenas at sit at arcu imperdiet",

@@ -195,6 +195,7 @@ featured-blog CSS
 .featured-blog .blog-card h3 {
   font-weight: 800;
   font-size: 24px;
+  line-height: 34px;
   color: var(--primary-text);
   padding: 8px 0;
 }

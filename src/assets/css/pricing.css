@@ -88,7 +88,7 @@ pricing CSS
   margin-bottom: 16px;
 }
 
-.pricing .single-card ul li i{
+.pricing .single-card ul li .icon{
   font-size: 22px;
   color: var(--secondary);
 }

@@ -1,7 +1,8 @@
 import blog1 from '../assets/images/blog/blog1.png';
 import blog2 from '../assets/images/blog/blog2.png';
 import blog3 from '../assets/images/blog/blog3.png';
-import blog4 from '../assets/images/blog/blog4.png';
+import blog4 from '../assets/images/blog/blog5.png';
+import featuredBlog from '../assets/images/blog/featured.png';
 
 import avatar1 from '../assets/images/blog/avatar1.png';
 import avatar2 from '../assets/images/blog/avatar2.png';
@@ -13,13 +14,14 @@ export const blogs = [
     id: "blog1",
     title: "21 Job Interview Tips: How To Make a Great Impression",
     category: "Graphic",
-    image: blog1,
+    image: featuredBlog,
     tags: [
-      "graphics",
+      "Graphics",
       "UI/UX",
       "AR/VR",
       "Tech"
     ],
+    status: "featured",
     author: "Darrell Steward",
     authorImg: avatar1,
     date: "11 Jan 2022",
@@ -46,11 +48,12 @@ export const blogs = [
     category: "Graphic",
     image: blog2,
     tags: [
-      "graphics",
+      "Graphics",
       "UI/UX",
       "AR/VR",
       "Tech"
     ],
+    status: "popular",
     author: "Darrell Steward",
     authorImg: avatar2,
     date: "11 Jan 2022",
@@ -77,11 +80,12 @@ export const blogs = [
     category: "Graphic",
     image: blog3,
     tags: [
-      "graphics",
+      "Graphics",
       "UI/UX",
       "AR/VR",
       "Tech"
     ],
+    status: "recent",
     author: "Darrell Steward",
     authorImg: avatar3,
     date: "11 Jan 2022",
@@ -108,11 +112,12 @@ export const blogs = [
     category: "Graphic",
     image: blog4,
     tags: [
-      "graphics",
+      "Graphics",
       "UI/UX",
       "AR/VR",
       "Tech"
     ],
+    status: "popular",
     author: "Darrell Steward",
     authorImg: avatar4,
     date: "11 Jan 2022",

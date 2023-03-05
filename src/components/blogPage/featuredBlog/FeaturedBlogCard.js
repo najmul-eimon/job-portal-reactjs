@@ -1,19 +1,18 @@
 import { Link } from 'react-router-dom';
 
-const SingleBlog = ({data, dataClass}) => {
-  const {id, image, category, title, description, author, authorImg, date, time} = data;
+const FeaturedBlogCard = ({featuredBlog}) => {
+  const {id, image, category, title, description, author, authorImg, date, time} = featuredBlog;
 
   return (
-    <div className={dataClass ? dataClass : ''}>
-      <Link to={`/blog/${id}`} className="single-blog">
-        <div className="image">
-          <img src={image} alt="Blog"/>
-        </div>
+    <Link to={`/blog/${id}`} className="blog-card">
+      <div className="image">
+        <img src={image} alt="Blog"/>
+      </div>
 
+      <div>
         <span>{category}</span>
         <h3>{title}</h3>
-        <p>{description?.introduction[0]}</p>
-        
+        <p>{description.introduction.slice(0,1)[0]}</p>
         <div className="blog-author">
           <div className="author">
             <img src={authorImg} alt="Avatar"/>
@@ -26,9 +25,9 @@ const SingleBlog = ({data, dataClass}) => {
             </ul>
           </div>
         </div>
-      </Link>
-    </div>
+      </div>
+    </Link>
   )
 }
 
-export default SingleBlog;
+export default FeaturedBlogCard;
