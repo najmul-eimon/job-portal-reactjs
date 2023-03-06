@@ -40,24 +40,24 @@ const AllBlogs = () => {
   
 
   return (
-    <section class="blog latest-blog">
-      <div class="container">
-        <div class="row align-items-center">
+    <section className="blog latest-blog">
+      <div className="container">
+        <div className="row align-items-center">
           {/* title */}
-          <div class="col-lg-6">
-            <div class="section-title">
+          <div className="col-lg-6">
+            <div className="section-title">
               <h3>Latest Posts</h3>
             </div>
           </div>
 
           {/* filter-buttons */}
-          <div class="col-lg-6">
-            <div class="filter-container">
-              <ul class="job-category-buttons scrollbar-hidden job-cat-btns">
+          <div className="col-lg-6">
+            <div className="filter-container">
+              <ul className="job-category-buttons scrollbar-hidden job-cat-btns">
                 {
                   categories.map((category, index) => (
                     <li key={index} className={category.toLowerCase() === active ? 'active' : ''}>
-                      <button onClick={() => handleFilter(category)} type="button" class="animate-btn animate-btn-outline">{category}</button>
+                      <button onClick={() => handleFilter(category)} type="button" className="animate-btn animate-btn-outline">{category}</button>
                     </li>
                   ))
                 }
@@ -67,7 +67,7 @@ const AllBlogs = () => {
         </div>
 
         {/* blogs */}
-        <div class="row row-gutter">
+        <div className="row row-gutter">
           {
             initialJobs.map((blog) => <SingleBlog data={blog} dataClass="col-md-6 col-lg-4"/>)
           }

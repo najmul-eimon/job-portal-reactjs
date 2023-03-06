@@ -2,33 +2,31 @@ import {FiCheck} from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import arrow from '../../../assets/images/svg/navigation-arrow.svg'
 
-const SinglePrice = () => {
+const SinglePrice = ({data}) => {
+  const {title, monthlyAmount, yearlyAmount, postAmount, packages} = data;
+
   return (
-    <div class="col-md-6 col-lg-4">
-      <div class="single-card">
-        <div class="card-title">
-          <small>Basic plan</small>
-          <h3><small>$</small>5<span>/mo</span></h3>
-          <p>or free for one user</p>
+    <div className="col-md-6 col-lg-4">
+      <div className={`single-card ${title.toLowerCase() === 'standard' ? 'active' : ''}`}>
+        <div className="card-title">
+          <small>{title} plan</small>
+          <h3><small>$</small>{monthlyAmount !== 0 ? monthlyAmount : postAmount}<span>/{monthlyAmount !== 0 ? 'mo' : 'Post'}</span></h3>
+          <p>or {yearlyAmount === 0 ? 'free for one user' : `$${yearlyAmount} yearly`}</p>
         </div>
 
-        <div class="card-content">
+        <div className="card-content">
           <h5>Includes:</h5>
           <ul>
-            <li class="d-flex align-items-center">
-              <FiCheck className='icon'/>
-              <p>Feature text goes here</p>
-            </li>
-            <li class="d-flex align-items-center">
-              <FiCheck className='icon'/>
-              <p>Feature text goes here</p>
-            </li>
-            <li class="d-flex align-items-center">
-              <FiCheck className='icon'/>
-              <p>Feature text goes here</p>
-            </li>
+            {
+              packages.map((item, index) => (
+                <li key={index} className="d-flex align-items-center">
+                  <FiCheck className='icon'/>
+                  <p>{item}</p>
+                </li>
+              ))
+            }
           </ul>
-          <Link to="/pricing" class="animate-btn animate-btn-fill">
+          <Link to="/pricing" className="animate-btn animate-btn-fill">
             <img src={arrow} alt="Arrow"/>
             Get started
           </Link>

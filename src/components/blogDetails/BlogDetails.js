@@ -9,16 +9,16 @@ const BlogDetails = () => {
   const {title, author, authorImg, date, time, image, description, tags} = SingleBlog;
 
   return (
-    <section class="blog-details">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
+    <section className="blog-details">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-12">
             {/* blog title */}
             <h2>{title}</h2>
 
             {/* blog author */}
-            <div class="blog-author">
-              <div class="author">
+            <div className="blog-author">
+              <div className="author">
                 <img src={authorImg} alt="Avatar"/>
               </div>
               <div>
@@ -34,12 +34,12 @@ const BlogDetails = () => {
             <h3>Introduction</h3>
             <p>{description.introduction[0]}</p>
             
-            <div class="blog-image">
-              <div class="row align-items-center row-gutter">
-                <div class="col-md-6 col-lg-7">
-                  <blockquote class="varient1">{description.introduction[1]}</blockquote>
+            <div className="blog-image">
+              <div className="row align-items-center row-gutter">
+                <div className="col-md-6 col-lg-7">
+                  <blockquote className="varient1">{description.introduction[1]}</blockquote>
                 </div>
-                <div class="col-md-6 col-lg-5">
+                <div className="col-md-6 col-lg-5">
                   <figure>
                     <img src={image} alt="Blog Details"/>
                     <figcaption>Image caption goes here</figcaption>
@@ -49,10 +49,10 @@ const BlogDetails = () => {
             </div>
 
             {/* blockquote */}
-            <blockquote class="varient2">{description.introduction[2]}</blockquote>
+            <blockquote className="varient2">{description.introduction[2]}</blockquote>
             <p>{description.introduction[3]}</p>
           
-            <blockquote class="varient3">"{description.introduction[4]}"</blockquote>
+            <blockquote className="varient3">"{description.introduction[4]}"</blockquote>
             <p>{description.introduction[5]}</p>
             
             {/* Conclusion */}
@@ -60,11 +60,11 @@ const BlogDetails = () => {
             {description.concliusion.map((item, index) => <p key={index}>{item}</p>)}
 
 
-            <div class="share">
-              <div class="row align-items-end">
+            <div className="share">
+              <div className="row align-items-end">
                 {/* share this post */}
-                <div class="col-md-6 order-2 order-md-1">
-                  <div class="share-post">
+                <div className="col-md-6 order-2 order-md-1">
+                  <div className="share-post">
                     <h4>Share this post</h4>
                     <ul>
                       {
@@ -81,8 +81,8 @@ const BlogDetails = () => {
                 </div>
   
                 {/* tags */}
-                <div class="col-md-6 order-1 order-md-2">
-                  <ul class="d-flex align-items-center tags">
+                <div className="col-md-6 order-1 order-md-2">
+                  <ul className="d-flex align-items-center tags">
                     {
                       tags.map((tag, i) => <li key={i}><a href="#!">{tag}</a></li>)
                     }

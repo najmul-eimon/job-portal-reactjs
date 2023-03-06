@@ -599,6 +599,7 @@ latest-job CSS
 
 .latest-job .single-job h3 {
   font-size: 18px;
+  line-height: 28px;
   font-weight: 800;
   color: var(--primary-text2);
   padding-bottom: 12px;
@@ -665,6 +666,7 @@ latest-job CSS
 
   .latest-job .single-job h3 {
     font-size: 16px;
+    line-height: 24px;
   }
 
   .latest-job .single-job a {

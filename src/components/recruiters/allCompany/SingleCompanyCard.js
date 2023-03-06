@@ -31,7 +31,7 @@ const SingleCompanyCard = ({data}) => {
           }
         </ul>
         <div className="job-btn text-center">
-          <Link to={`/recruiters/${id}`}>25 Job Open</Link>
+          <Link to={`/recruiters/${id}`}>{jobs.length} Job Open</Link>
         </div>
       </div>
     </div>
