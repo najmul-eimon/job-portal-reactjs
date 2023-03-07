@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper";
+import { Pagination, Autoplay } from "swiper";
 import SectionTitle from '../SectionTitle';
 import SingleBlog from "./SingleBlog";
 import {blogs} from '../../../data/blog';
@@ -33,12 +33,12 @@ const Blog = ({dataClass}) => {
                   slidesPerView: 3,
                 }
               }}
-              modules={[Pagination]}
+              modules={[Pagination, Autoplay]}
               pagination= {{clickable: true}}
               className="blog-slider"
             >
             {
-              blogs.map((blog) => (
+              blogs.slice(0,6).map((blog) => (
                 <SwiperSlide key={blog.id}>
                   <SingleBlog data={blog} />
                 </SwiperSlide>

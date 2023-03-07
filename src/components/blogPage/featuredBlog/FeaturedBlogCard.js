@@ -12,7 +12,7 @@ const FeaturedBlogCard = ({featuredBlog}) => {
       <div>
         <span>{category}</span>
         <h3>{title}</h3>
-        <p>{description.introduction.slice(0,1)[0]}</p>
+        <p>{description.introduction.slice(0,1)[0].length <= 160 ? description.introduction.slice(0,1)[0] : `${description.introduction.slice(0,1)[0].substring(0,160)}...`}</p>
         <div className="blog-author">
           <div className="author">
             <img src={authorImg} alt="Avatar"/>

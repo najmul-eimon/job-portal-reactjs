@@ -1,5 +1,6 @@
 import SingleCard from './SingleCard';
 import {startCount} from '../../../data/startCount';
+import { Link } from 'react-router-dom';
 
 const StartWith = () => {
   return (
@@ -12,13 +13,13 @@ const StartWith = () => {
               <h2>Explore thousands of jobs in one place and get the job of your dream</h2>
               <p>We know the best solution for all of your business ideas and we can help you solve all business problems</p>
               <div className="buttons">
-                <button type="button" className="animate-btn animate-btn-fill find-btn">
+                <Link to="/job" className="animate-btn animate-btn-fill find-btn">
                   <i className="ph-magnifying-glass"></i>
                   Find here for new job
-                </button>
-                <button type="button" className="animate-btn animate-btn-outline reg-btn">
+                </Link>
+                <Link to="/register" className="animate-btn animate-btn-outline reg-btn">
                   Register
-                </button>
+                </Link>
               </div>
             </div>
           </div>

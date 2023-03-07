@@ -20,6 +20,12 @@ const Menubar = () => {
     });
   }, [])
 
+  const handleClick = () => {
+    if(window.innerWidth < 992){
+      document.querySelector('.navbar-toggler').click();
+    }
+  }
+
   return (
     <header className={`menubar ${scroll ? 'navFixed' : ''}`}>
       <div className="container">
@@ -43,7 +49,7 @@ const Menubar = () => {
                   {
                     menuItems.map(({id, name, link}) => (
                       <li key={id} className="nav-item">
-                        <NavLink className="nav-link" to={link === 'home' ? '/' : link}>{name}</NavLink>
+                        <NavLink className="nav-link" to={link === 'home' ? '/' : link} onClick={handleClick}>{name}</NavLink>
                       </li>
                     ))
                   }

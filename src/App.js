@@ -7,6 +7,10 @@ import SingleCompany from './pages/singleCompany/SingleCompany';
 import BlogPage from './pages/blog/BlogPage';
 import SingleBlog from './pages/blogDetails/SingleBlog';
 import Pricing from './pages/pricing/Pricing';
+import NotFoundPage from './pages/notFoundPage/NotFoundPage';
+import Contact from './pages/contact/Contact';
+import Signin from './pages/signin/Signin';
+import Signup from './pages/signup/Signup';
 import './App.css';
 import './assets/css/filter.css';
 import './assets/css/job-location.css';
@@ -20,6 +24,9 @@ import './assets/css/recruiter.css';
 import './assets/css/company-details.css';
 import './assets/css/blog-page.css';
 import './assets/css/pricing.css';
+import './assets/css/contact.css';
+import './assets/css/authentication.css';
+import './assets/css/not-found.css';
 
 
 function App() {
@@ -34,7 +41,11 @@ function App() {
         <Route path='blog' element={<BlogPage/>} />
         <Route path='blog/:blogId' element={<SingleBlog/>} />
         <Route path='pricing' element={<Pricing/>} />
+        <Route path='contact' element={<Contact/>} />
+        <Route path='login' element={<Signin/>} />
+        <Route path='register' element={<Signup/>} />
       </Route>
+      <Route path='*' element={<NotFoundPage/>} />
     </Routes>
   );
 }

@@ -25,7 +25,7 @@ const SingleJobCard = ({data}) => {
             </li>
           </ul>
         </div>
-        <p className="desc">{description}</p>
+        <p className="desc">{description.length <= 150 ? description : `${description.substring(0,150)}...`}</p>
         <ul className="d-flex align-items-center tags">
           {
             tags.map((tag, index) => <li key={index}><a href="#!">{tag}</a></li>)

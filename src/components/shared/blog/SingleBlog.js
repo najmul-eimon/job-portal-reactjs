@@ -11,8 +11,8 @@ const SingleBlog = ({data, dataClass}) => {
         </div>
 
         <span>{category}</span>
-        <h3>{title}</h3>
-        <p>{description?.introduction[0]}</p>
+        <h3>{title.length <= 50 ? title : `${title.substring(0,50)}...`}</h3>
+        <p>{description?.introduction[0].length <= 180 ? description?.introduction[0] : `${description?.introduction[0].substring(0,180)}...`}</p>
         
         <div className="blog-author">
           <div className="author">

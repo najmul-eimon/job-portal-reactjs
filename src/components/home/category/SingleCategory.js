@@ -12,7 +12,7 @@ const SingleCategory = ({data}) => {
           <img src={image} alt="Category"/>
         </div>
         <h3>{title}</h3>
-        <p>{description}</p>
+        <p>{description.length <= 40 ? description : `${description.substring(0,40)}...`}</p>
         <Link to="/job">More <HiArrowRight/></Link>
       </div>
     </div>
