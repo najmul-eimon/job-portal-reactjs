@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import {FiSearch} from 'react-icons/fi';
 
-const SelectDropdown = ({handleSearch, name, showDropdown, setShowDropdown, selectData, setSelectData, dataArray}) => {
+const SelectDropdown = ({handleSearch, setSearch, name, showDropdown, setShowDropdown, selectData, setSelectData, dataArray}) => {
 
   function useOutsideAlerter(ref) {
     useEffect(() => {
@@ -38,6 +38,7 @@ const SelectDropdown = ({handleSearch, name, showDropdown, setShowDropdown, sele
               <li key={index}>
                 <p onClick={() => {
                     setSelectData(value);
+                    setSearch("")
                     setShowDropdown(!selectData);
                   }}>
                   {value}

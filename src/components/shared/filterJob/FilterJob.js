@@ -37,16 +37,16 @@ const FilterJob = () => {
         {/* industry */}
         <div className="col-md-6 col-lg-2">
           <div className="single-category">
-            <SingleCategoryTitle icon={suitcaseIcon} label={"Industry"} arrow={true}/>
-            <SelectDropdown handleSearch={handleSearch} name={"Industry"} showDropdown={showIndustry} setShowDropdown={setShowIndustry} selectData={industry} setSelectData={setIndustry} dataArray={industries}/>
+            <SingleCategoryTitle icon={suitcaseIcon} label="Industry" arrow={true}/>
+            <SelectDropdown handleSearch={handleSearch} name="Industry" setSearch={setSearch} showDropdown={showIndustry} setShowDropdown={setShowIndustry} selectData={industry} setSelectData={setIndustry} dataArray={industries}/>
           </div>
         </div>
 
         {/* Location */}
         <div className="col-md-6 col-lg-2">
           <div className="single-category">
-            <SingleCategoryTitle icon={mapIcon} label={"Location"} arrow={true}/>
-            <SelectDropdown handleSearch={handleSearch} name={"Location"} showDropdown={showLocation} setShowDropdown={setShowLocation} selectData={location} setSelectData={setLocation} dataArray={locations}/>
+            <SingleCategoryTitle icon={mapIcon} label="Location" arrow={true}/>
+            <SelectDropdown handleSearch={handleSearch} name="Location" setSearch={setSearch} showDropdown={showLocation} setShowDropdown={setShowLocation} selectData={location} setSelectData={setLocation} dataArray={locations}/>
           </div>
         </div>
 

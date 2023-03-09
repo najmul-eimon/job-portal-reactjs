@@ -1,4 +1,5 @@
 import {HiArrowRight} from 'react-icons/hi2';
+import { Link } from 'react-router-dom';
 
 const SingleLocationCard = ({data}) => {
   const {status, image, location, vacancy, company} = data;
@@ -14,7 +15,7 @@ const SingleLocationCard = ({data}) => {
         <span>{vacancy} vacancy</span>
         <span>{company} Company</span>
       </p>
-      <a href="job.html">See More <HiArrowRight className='icons'/></a>
+      <Link to="/job">See More <HiArrowRight className='icons'/></Link>
     </div>
   )
 }
