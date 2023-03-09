@@ -23,7 +23,7 @@ const Login = () => {
               <InputBox inputType="password" label="Password" id="lpass" />
 
               <div className="input-box input-check-box">
-                <label for="chk" className="check-container">
+                <label htmlFor="chk" className="check-container">
                   <input type="checkbox" className="input-check" id="chk"/>
                   <span className="checkmark"></span>
                   <span>Remember me</span>

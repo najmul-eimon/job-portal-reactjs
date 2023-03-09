@@ -1,6 +1,7 @@
 import SingleCard from './SingleCard';
 import {startCount} from '../../../data/startCount';
 import { Link } from 'react-router-dom';
+import searchIcon from '../../../assets/images/svg/search.svg';
 
 const StartWith = () => {
   return (
@@ -14,7 +15,7 @@ const StartWith = () => {
               <p>We know the best solution for all of your business ideas and we can help you solve all business problems</p>
               <div className="buttons">
                 <Link to="/job" className="animate-btn animate-btn-fill find-btn">
-                  <i className="ph-magnifying-glass"></i>
+                  <img src={searchIcon} alt="Icon" />
                   Find here for new job
                 </Link>
                 <Link to="/register" className="animate-btn animate-btn-outline reg-btn">

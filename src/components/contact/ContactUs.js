@@ -13,22 +13,22 @@ const ContactUs = () => {
 
             <form action="#!">
               <div className="input-box">
-                <label for="name">Name</label>
+                <label htmlFor="name">Name</label>
                 <input type="text" id="name" className="inputs"/>
               </div>
 
               <div className="input-box">
-                <label for="email">Email</label>
+                <label htmlFor="email">Email</label>
                 <input type="email" id="email" className="inputs"/>
               </div>
 
               <div className="input-box">
-                <label for="msg">Message</label>
+                <label htmlFor="msg">Message</label>
                 <textarea id="msg" placeholder="Type your message..." className="inputs"></textarea>
               </div>
 
               <div className="input-box input-check-box">
-                <label for="chk" className="check-container">
+                <label htmlFor="chk" className="check-container">
                   <input type="checkbox" className="input-check" id="chk"/>
                   <span className="checkmark"></span>
                   <span>I accept the <Link to="/">Terms</Link></span>
@@ -42,7 +42,7 @@ const ContactUs = () => {
           </div>
           <div className="col-lg-6">
             <div className="map-card">
-              <iframe className="map" title="contactMap" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d438.8143931912928!2d-0.1267466409927619!3d51.52589089656171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1676788897282!5m2!1sen!2sbd" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"/>
+              <iframe className="map" title="contactMap" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d438.8143931912928!2d-0.1267466409927619!3d51.52589089656171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1676788897282!5m2!1sen!2sbd" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"/>
             </div>
           </div>
         </div>

@@ -69,7 +69,7 @@ const AllBlogs = () => {
         {/* blogs */}
         <div className="row row-gutter">
           {
-            initialJobs.map((blog) => <SingleBlog data={blog} dataClass="col-md-6 col-lg-4"/>)
+            initialJobs.map((blog) => <SingleBlog key={blog.id} data={blog} dataClass="col-md-6 col-lg-4"/>)
           }
         </div>
 

@@ -1,8 +1,8 @@
 export const notFoundBanner = <svg className="banner-bg" width="1920" height="1002" viewBox="0 0 1920 1002" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_1301_95779)">
+<g clipPath="url(#clip0_1301_95779)">
 <rect width="1920" height="1002" fill="white"/>
-<g clip-path="url(#clip1_1301_95779)">
-<g clip-path="url(#clip2_1301_95779)">
+<g clipPath="url(#clip1_1301_95779)">
+<g clipPath="url(#clip2_1301_95779)">
 <circle className="sun" cx="960" cy="811" r="127" fill="#00AFE2"/>
 </g>
 </g>
@@ -26,7 +26,7 @@ export const notFoundBanner = <svg className="banner-bg" width="1920" height="10
 </svg>
 
 export const buildingBg = <svg className="building-bg" width="1920" height="363" viewBox="0 0 1920 363" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_1304_104931)">
+<g clipPath="url(#clip0_1304_104931)">
 <rect y="229" width="1922" height="134" fill="white"/>
 <path d="M715.624 72.7617H678.924V227.849H715.624V72.7617Z" fill="#EBEBEB"/>
 <path d="M696.918 83.6309H685.762V105.108H696.918V83.6309Z" fill="white"/>

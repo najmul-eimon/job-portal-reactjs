@@ -41,7 +41,6 @@ const Company = () => {
               }}
               loop={true}
               speed={4000}
-              loopFillGroupWithBlank={true}
               modules={[Autoplay]}
               className="company-slider"
             >

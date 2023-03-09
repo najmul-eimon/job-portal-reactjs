@@ -23,7 +23,7 @@ export const locations = [
     status: "Recent"
   },
   {
-    id: "loc2",
+    id: "loc3",
     image: newYork,
     location: "New York, USA",
     vacancy: "15",

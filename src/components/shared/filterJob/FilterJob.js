@@ -4,6 +4,7 @@ import SingleCategoryTitle from './SingleCategoryTitle';
 import suitcaseIcon from '../../../assets/images/svg/suitcase-grey.svg';
 import mapIcon from '../../../assets/images/svg/map-trifold.svg';
 import pencilIcon from '../../../assets/images/svg/pencil-line.svg';
+import searchIcon from '../../../assets/images/svg/search.svg';
 import {FiSearch} from 'react-icons/fi';
 
 const FilterJob = () => {
@@ -62,7 +63,7 @@ const FilterJob = () => {
         <div className="col-md-6 col-lg-3">
           <div className="search-btn-main">
             <button type="button" className="animate-btn animate-btn-fill search-btn">
-              <FiSearch className='search-icon'/>
+              <img src={searchIcon} className='search-icon' alt="Icon" />
               Search
             </button>
           </div>

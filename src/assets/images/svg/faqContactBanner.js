@@ -1,5 +1,5 @@
 export const banner = <svg className="banner-bg" width="1920" height="500" viewBox="0 0 1920 500" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_1282_86197)">
+<g clipPath="url(#clip0_1282_86197)">
 <rect width="1920" height="500" transform="matrix(-1 0 0 1 1920 0)" fill="#FAFDFF"/>
 <path d="M1263.66 292.301H1230.45V432.612H1263.66V292.301Z" fill="#EBEBEB"/>
 <path d="M1246.73 302.135H1236.64V321.566H1246.73V302.135Z" fill="white"/>

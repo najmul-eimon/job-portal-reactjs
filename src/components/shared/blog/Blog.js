@@ -21,7 +21,6 @@ const Blog = ({dataClass}) => {
               autoplay= {true}
               speed={3000}
               allowTouchMove={true}
-              freeModeMomentum={false}
               breakpoints= {{
                 576: {
                   slidesPerView: 1,

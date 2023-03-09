@@ -38,9 +38,9 @@ const Menubar = () => {
               <Navbar.Toggle aria-controls="basic-navbar-nav" >
                 <span className="navbar-toggler-icon">
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5.9375 5H14.0625" stroke="#0075C8" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
-                    <path d="M3.125 10H16.875" stroke="#0075C8" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
-                    <path d="M5.9375 15H14.0625" stroke="#0075C8" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
+                    <path d="M5.9375 5H14.0625" stroke="#0075C8" strokeWidth="1.5" strokeLinecap="square" strokeLinejoin="round"/>
+                    <path d="M3.125 10H16.875" stroke="#0075C8" strokeWidth="1.5" strokeLinecap="square" strokeLinejoin="round"/>
+                    <path d="M5.9375 15H14.0625" stroke="#0075C8" strokeWidth="1.5" strokeLinecap="square" strokeLinejoin="round"/>
                   </svg>                    
                 </span>
               </Navbar.Toggle>

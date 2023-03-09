@@ -1,7 +1,7 @@
 export const bannerBg = <svg className="banner-bg" width="1920" height="993" viewBox="0 0 1920 993" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_3447_216530)">
+<g clipPath="url(#clip0_3447_216530)">
 <rect width="1920" height="993" transform="matrix(-1 0 0 1 1920 0)" fill="url(#paint0_linear_3447_216530)"/>
-<g clip-path="url(#clip1_3447_216530)">
+<g clipPath="url(#clip1_3447_216530)">
 <circle cx="960" cy="800" r="202" fill="#FCED6A"/>
 </g>
 <path d="M687.343 702.762H650.643V857.849H687.343V702.762Z" fill="#EBEBEB"/>
@@ -1221,8 +1221,8 @@ export const bannerBg = <svg className="banner-bg" width="1920" height="993" vie
 </g>
 <defs>
 <linearGradient id="paint0_linear_3447_216530" x1="960" y1="0" x2="960" y2="993" gradientUnits="userSpaceOnUse">
-<stop stop-color="#F9FDFF"/>
-<stop offset="1" stop-color="white" stop-opacity="0"/>
+<stop stopColor="#F9FDFF"/>
+<stop offset="1" stopColor="white" stopOpacity="0"/>
 </linearGradient>
 <clipPath id="clip0_3447_216530">
 <rect width="1920" height="993" fill="white" transform="matrix(-1 0 0 1 1920 0)"/>
