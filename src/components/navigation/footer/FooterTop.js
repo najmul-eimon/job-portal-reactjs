@@ -12,9 +12,9 @@ const FooterTop = () => {
         <div className="row">
           <div className="col-md-6 col-lg-5">
             <div className="footer-about">
-              <a href="index.html" className="footer-logo">
+              <Link to="/" className="footer-logo">
                 <img src={footerLogo} alt="Logo"/>
-              </a>
+              </Link>
               <p className="about-company">21 Job Interview Tips: How To Make a Great Impression.Our mission is to create the world&rsquo;s most sustainable healthcare company.</p>
               <ul className="social">
                 <li>
